@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="container-item">
+        <form>
+          <h1 class="heading">Temperature Conversions</h1>
+          <br />
+          <input id="txt" class="txt" type="number" value="0" /><br />
+          <input id="rdCF" class="rdCF" type="radio" name="unit" />
+          <label for="rdCF">Celsius➡️Fahrenheit</label><br />
+          <input id="rdFC" class="rdFC" type="radio" name="unit" />
+          <label for="rdFC">Fahrenheit➡️Celsius</label><br />
+          <button id="btn" class="btn" type="button">Submit</button>
+          <p id="result"></p>
+        </form>
+      </div>
+      <div class="container-item">
+        <h1 class="heading">Dice Roller</h1>
+        <form>
+          <label for="txtDR" style="font-weight: bold;"># of Dice</label>
+          <input
+            type="number"
+            id="txtDR"
+            class="txt"
+            value="1"
+            min="1"
+            max="6"
+            style="width: 150px"
+          />
+          <button id="btnDR" onclick="DiceRoller()" class="btn" type="button" style="width: 90px">
+            Roll Dice
+          </button>
+        </form>
+        <p id="diceResult" style="margin-top: 0;">Dice Result</p>
+        <div id="diceImages"></div>
+        <p id="sumDiceResult">Result</p>
+      </div>
+      <div class="container-item">
+        <h1 class="heading" style="margin-bottom: 50px;" >Generator Password</h1>
+        <form >
+          <label for="txtGPassLength" style="font-weight: bold;margin-left: -60px;"># of Password</label>
+          <input id="txtGPassLength" class="txt" type="number" min="4" style="margin-bottom: 30px;"><br>
+          <button id="btnGPass" class="btn" type="button" onclick="GeneratorPassword()" style="width: 90px ;">Generate</button>
+        </form>
+        <h3 id="txtGPass"></h3>
+      </div>
+      <div class="container-item">
+        <h1 class="heading">Clock Digital</h1>
+        <div class="clock-container">
+          <p id="clock"></p>
+        </div>
+      </div>
+      <div class="container-item">
+        <h1 class="heading">Stopwatch</h1>
+        <div class="stopw-container">
+          <p id="stopw">00:00:00:00</p>
+        </div>
+        <div class="btnstw-container">
+          <button id="btnStwStart" class="btnStw" style="background-color: rgb(2, 225, 2);" type="button" onclick="stw.start();">Start</button>
+          <button id="btnStwStop" class="btnStw" style="background-color: rgb(255, 0, 0);" type="button" onclick="stw.stop();">Stop</button>
+          <button id="btnStwReset" class="btnStw" style="background-color: rgb(0, 18, 97);" type="button" onclick="stw.reset();">Reset</button>
+        </div>
+      </div>
+      <div class="container-item">
+        <h1 class="heading">Calculator</h1>
+        <div class="calc-display">
+          <input id="calcResult" readonly>
+        </div>
+        <div class="oper-container">
+          <button class="oper" id="calcClear" onclick="clearDisplay()">⬅</button>
+          <button class="number" id="calc3" onclick="appendToDisplay('3')">3</button>
+          <button class="number" id="calc2" onclick="appendToDisplay('2')">2</button>
+          <button class="number" id="calc1" onclick="appendToDisplay('1')">1</button>
+          <button class="oper" id="calcSum" onclick="appendToDisplay('+')">+</button>
+          <button class="number" id="calc6" onclick="appendToDisplay('6')">6</button>
+          <button class="number" id="calc5" onclick="appendToDisplay('5')">5</button>
+          <button class="number" id="calc4" onclick="appendToDisplay('4')">4</button>
+          <button class="oper" id="calcSub" onclick="appendToDisplay('-')">-</button>
+          <button class="number" id="calc9" onclick="appendToDisplay('9')">9</button>
+          <button class="number" id="calc8" onclick="appendToDisplay('8')">8</button>
+          <button class="number" id="calc7" onclick="appendToDisplay('7')">7</button>
+          <button class="oper" id="calcMul" onclick="appendToDisplay('*')">x</button>
+          <button class="oper" id="calcDiv" onclick="appendToDisplay('/')">/</button>
+          <button class="number" id="calc0" onclick="appendToDisplay('0')">0</button>
+          <button class="number" id="calcDot" onclick="appendToDisplay('.')">.</button>
+          <button class="oper" id="calcEqual" onclick="calculate()">=</button>
+        </div>
+      </div>
+    </div>
+    <script  src="index.js"></script>
+  </body>
+</html>

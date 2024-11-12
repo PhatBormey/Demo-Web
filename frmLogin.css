@@ -1,0 +1,46 @@
+.container-item{
+    background-color: rgb(226, 226, 226);
+    width: 50vw;
+    height: 70vh;
+    margin: 15vh auto;
+}
+.heading{
+    margin-top: 50px;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+.lb{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.txt{
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+.btn{
+    font-size: 1.2rem;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btn:hover{
+    background-color: rgba(0, 0, 226, 0.951);
+}
+#txtForgetPass{
+    margin-top: 10px;
+    color: rgb(57, 57, 221);
+    cursor: pointer;
+}
+#txtForgetPass:hover{
+    color: rgba(107, 107, 249, 0.733);
+}
+#txtCreateAcc{
+    margin-top: 80px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#txtCreateAcc:hover{
+    color: #575757df;
+}
